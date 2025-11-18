@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnackBox - Paket Snack 5000 Ribuan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">🍿 DynaSnack</div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#testimonials">Testimoni</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Paket Snack Premium 5000 Ribuan</h1>
+        <p>Hai teman-teman!🥰 Sedang apa sekarang? Kerjain tugas yah? Laper? </p>
+        <p>🍟 Tenang aja, ada solusinya nih… 👀</p>
+        <p>✨ Dyna Snack siap nemenin harimu! ✨</p>
+        <p>Rasa gurih,renyah, dan bikin nagih 😋 Cocok buat nonton, rebahan, atau nemenin kamu belajar 💻</p>
+        <p>Biar hari kamu lebih renyah,pilih Dyna Snack."Ngemil Tanpa Drama"</p>
+        <button class="cta-button" onclick="scrollToProducts()">Lihat Paket</button>
+    </section>
+
+    <div class="container" id="products">
+        <h2 class="section-title">Pilihan Paket Snack</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-icon">🎁</div>
+                <h3>Paket Hemat</h3>
+                <div class="price">Rp 5000</div>
+                <ul>
+                    <li>Kuping Gajah</li>
+                    <li>Astro Coklat</li>
+                    <li>Hugo Coklat</li>
+                    <li>Makaroni Original</li>
+                    <li>Pisang Sale</li>
+                </ul>
+                <button class="order-button" onclick="orderPackage('Paket Hemat - Rp 5000')">Pesan Sekarang</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icon">⭐</div>
+                <h3>Paket Serba Pedas</h3>
+                <div class="price">Rp 5000</div>
+                <ul>
+                    <li>Stick</li>
+                    <li>Krupuk Jengkol Pedas</li>
+                    <li>Krupuk Pedas</li>
+                </ul>
+                <button class="order-button" onclick="orderPackage('Paket Serba Pedas- Rp 5000')">Pesan
+                    Sekarang</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icon">👑</div>
+                <h3>Paket Premium</h3>
+                <div class="price">Rp 7000</div>
+                <ul>
+                    <li>Basreng Pedas</li>
+                    <li>Basreng Usus Ayam</li>
+                </ul>
+                <button class="order-button" onclick="orderPackage('Paket Premium - Rp 5000')">Pesan Sekarang</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="features">
+        <h2 class="section-title">Kenapa Pilih Kami?</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">✨</div>
+                <h3>Kualitas Terjamin</h3>
+                <p>Snack berkualitas dengan kemasan menarik</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🚚</div>
+                <h3>Gratis Pengiriman</h3>
+                <p>Untuk area lingkungan UNAI/Asrama</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">💰</div>
+                <h3>Harga Bersahabat</h3>
+                <p>Paket lengkap dengan harga terjangkau</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📦</div>
+                <h3>Custom Paket</h3>
+                <p>Bisa request isi sesuai selera</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <h2 class="section-title">Apa Kata Pelanggan?</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Snacknya enak-enak, kemasannya juga rapi! Cocok banget buat nemanin belajar. Pasti order lagi!"</p>
+                <div class="name">- Bg Thomas, Kalimantan</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Harganya affordable banget untuk isi yang banyak. Pengirimannya juga cepat. Recommended!"</p>
+                <div class="name">- Bg Ardin, Nias</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Paket premiumnya worth it! Varietasnya banyak dan semua enak. Terima kasih!"</p>
+                <div class="name">- Ka Ana, Bandung</div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h3>Hubungi Kami</h3>
+        <p>📱 WhatsApp : 0823-1803-5941</p>
+        <p>📍 Padalarang, Bandung Barat</p>
+        <p style="margin-top: 2rem; color: #999;">© 2025 SnackBox. All rights reserved.</p>
+    </footer>
+
+    <div class="whatsapp-float" onclick="contactWhatsApp()">
+        💬
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
